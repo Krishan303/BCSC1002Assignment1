@@ -8,5 +8,4 @@ package definitions;
 
 public class Book {
 
-
 }
