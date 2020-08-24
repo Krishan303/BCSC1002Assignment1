@@ -9,5 +9,30 @@ package definitions;
 public class Book {
     private String bookName;
     private String bookAuthorName;
-    private String[] bookIsbnNumber;
+    private String bookIsbnNumber;
+
+    public String getBookName() {
+        return bookName;
+    }
+
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
+    }
+
+    public String getBookAuthorName() {
+        return bookAuthorName;
+    }
+
+    public void setBookAuthorName(String bookAuthorName) {
+        this.bookAuthorName = bookAuthorName;
+    }
+
+    public String getBookIsbnNumber() {
+        return bookIsbnNumber;
+    }
+
+    public void setBookIsbnNumber(String bookIsbnNumber) {
+        this.bookIsbnNumber = bookIsbnNumber;
+    }
 }
+
