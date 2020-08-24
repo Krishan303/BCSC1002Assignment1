@@ -58,5 +58,13 @@ public class Book {
         return Objects.hash(getBookName(), getBookAuthorName(), getBookIsbnNumber());
     }
 
+    @Override
+    public String toString() {
+        return "Book{" +
+                "bookName='" + bookName + '\'' +
+                ", bookAuthorName='" + bookAuthorName + '\'' +
+                ", bookIsbnNumber='" + bookIsbnNumber + '\'' +
+                '}';
+    }
 }
 
