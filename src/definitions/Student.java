@@ -10,7 +10,19 @@ public class Student {
     private String studentName;
     private long universityRollNumber;
     private int numberOfBookStored;
-    private Book[] nameOfBook;
+    private Book[] namesOfBooksIssuedByStudents;
+
+    public Student() {
+        this.studentName = getStudentName();
+        this.universityRollNumber = getUniversityRollNumber();
+        this.numberOfBookStored = getNumberOfBookStored();
+        this.namesOfBooksIssuedByStudents = new Book[10];
+        for (int i = 0; i < namesOfBooksIssuedByStudents.length; i++) {
+
+
+        }
+
+    }
 
     public String getStudentName() {
         return studentName;
@@ -36,12 +48,13 @@ public class Student {
         this.numberOfBookStored = numberOfBookStored;
     }
 
-    public Book[] getNameOfBook() {
-        return nameOfBook;
+    public Book[] getNamesOfBooks() {
+        return namesOfBooksIssuedByStudents;
     }
 
-    public void setNameOfBook(Book[] nameOfBook) {
-        this.nameOfBook = nameOfBook;
+    public void setNamesOfBooks(Book[] nameOfBook) {
+        this.namesOfBooksIssuedByStudents
+                = namesOfBooksIssuedByStudents;
     }
 }
 
