@@ -19,7 +19,8 @@ public class Student {
         this.namesOfBooksIssuedByStudents = new Book[10];
         for (int i = 0; i < namesOfBooksIssuedByStudents.length; i++) {
             namesOfBooksIssuedByStudents[i]
-                    = new Book("science", "ruskin bond", "1234");
+                    = new Book("science",
+                    "ruskin bond", "1234");
         }
     }
 

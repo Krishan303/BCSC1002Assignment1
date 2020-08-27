@@ -51,4 +51,14 @@ public class Library {
                 "namesOfBooksAvailable=" + Arrays.toString(namesOfBooksAvailable) +
                 '}';
     }
+
+    /**
+     * This method adds a new book to the library
+     *
+     * @param name The name of book to be added.
+     */
+    public void addBook(String name) {
+        System.out.println(name + " was added to library ");
+    }
+
 }
