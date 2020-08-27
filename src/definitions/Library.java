@@ -10,10 +10,19 @@ public class Library {
     private Book[] namesOfBooksAvailable;
 
     public Book[] getNamesOfBooksAvailable() {
-        return namesOfBooksAvailable;
+        return namesOfBooksAvailable.clone();
     }
 
     public void setNamesOfBooksAvailable(Book[] namesOfBooksAvailable) {
         this.namesOfBooksAvailable = namesOfBooksAvailable;
+    }
+    public Library() {
+        Book[] namesOfBooksAvailable = new Book[10];
+        for (int i = 0; i < namesOfBooksAvailable.length; i++) {
+            namesOfBooksAvailable[i] =
+                    new Book("malgudi days" ,
+                            " ruskin bond" , "5678");
+        }
+        this.namesOfBooksAvailable=namesOfBooksAvailable;
     }
 }

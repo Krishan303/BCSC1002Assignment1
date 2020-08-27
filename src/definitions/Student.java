@@ -18,10 +18,13 @@ public class Student {
         this.numberOfBookStored = getNumberOfBookStored();
         this.namesOfBooksIssuedByStudents = new Book[10];
         for (int i = 0; i < namesOfBooksIssuedByStudents.length; i++) {
-
-
+            namesOfBooksIssuedByStudents[i]
+                    = new Book("science", "ruskin bond", "1234");
         }
+    }
 
+    public Student(Book[] namesOfBooksIssuedByStudents) {
+        this.namesOfBooksIssuedByStudents = namesOfBooksIssuedByStudents;
     }
 
     public String getStudentName() {
@@ -48,11 +51,11 @@ public class Student {
         this.numberOfBookStored = numberOfBookStored;
     }
 
-    public Book[] getNamesOfBooks() {
-        return namesOfBooksIssuedByStudents;
+    public Book[] getNamesOfBooksIssuedByStudents() {
+        return namesOfBooksIssuedByStudents.clone();
     }
 
-    public void setNamesOfBooks(Book[] nameOfBook) {
+    public void setNamesOfBooksIssuedByStudents(Book[] namesOfBooksIssuedByStudents) {
         this.namesOfBooksIssuedByStudents
                 = namesOfBooksIssuedByStudents;
     }

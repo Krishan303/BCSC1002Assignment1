@@ -6,8 +6,15 @@
  * */
 package execution;
 
+import definitions.Book;
+import definitions.Student;
+
 public class FrontDesk {
     public static void main(String[] args) {
+        Book book = new Book("science", "o henry" , " 1234");
+        Student student = new Student();
+        student.setStudentName("Krishan");
+        System.out.println(student.getStudentName());
 
     }
 }
