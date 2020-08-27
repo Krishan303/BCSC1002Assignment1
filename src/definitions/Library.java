@@ -64,9 +64,18 @@ public class Library {
     /**
      * This method tells us about the books issued by the student.
      *
-     * @param name tells us about the book which is issued.
+     * @param name The name book which is issued.
      */
     public void issueBook(String name) {
         System.out.println(name + " was issued by the student ");
+    }
+
+    /**
+     * This method tells us about the book returned by the student.
+     *
+     * @param name The name of book which is returned.
+     */
+    public void doReturn(String name) {
+        System.out.println(name + " was returned to the library ");
     }
 }
