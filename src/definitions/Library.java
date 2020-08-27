@@ -44,4 +44,11 @@ public class Library {
     public int hashCode() {
         return Arrays.hashCode(getNamesOfBooksAvailable());
     }
+
+    @Override
+    public String toString() {
+        return "Library{" +
+                "namesOfBooksAvailable=" + Arrays.toString(namesOfBooksAvailable) +
+                '}';
+    }
 }
