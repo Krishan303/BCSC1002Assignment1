@@ -6,15 +6,13 @@
  * */
 package execution;
 
-import definitions.Book;
-import definitions.Student;
-
 public class FrontDesk {
+    private static final int SHOW_ALL_MY_ISSUED_BOOK = 3;
+    private static final int EXIT = 4;
+    private static final int ISSUE_A_NEW_BOOK = 1;
+    private static final int RETURN_ISSUED_BOOK = 2;
+
     public static void main(String[] args) {
-        Book book = new Book("science", "o henry" , " 1234");
-        Student student = new Student();
-        student.setStudentName("Krishan");
-        System.out.println(student.getStudentName());
 
     }
 }
