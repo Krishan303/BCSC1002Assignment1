@@ -37,8 +37,6 @@ public class FrontDesk {
                     System.out.println("Enter the Book Name you want to issue");
                     scannerObject.nextLine();
                     String bookName = scannerObject.nextLine();
-                    if(bookName.equals(library.getNamesOfBooksAvailable())){
-                }
                     library.issueBook(bookName);
                     break;
                 case RETURN_ISSUED_BOOK:
