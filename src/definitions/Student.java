@@ -48,7 +48,7 @@ public class Student {
     }
 
     public void setMiddleName(String middleName) {
-        middleName = middleName;
+        this.middleName = middleName;
     }
 
     public String getLastName() {
@@ -56,7 +56,7 @@ public class Student {
     }
 
     public void setLastName(String lastName) {
-        lastName = lastName;
+        this.lastName = lastName;
     }
 
     public long getUniversityRollNumber() {
@@ -84,6 +84,9 @@ public class Student {
                 = namesOfBooksIssuedByStudents;
     }
 
+    /**
+     * This method shows us the number of books issued by a student
+     */
     public void booksIssued() {
         for (Book bookNames : namesOfBooksIssuedByStudents) {
             System.out.println(bookNames);

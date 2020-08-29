@@ -12,7 +12,7 @@ public class Library {
     private Book[] namesOfBooksAvailable;
 
     public Library() {
-        this.namesOfBooksAvailable = new Book[10];
+        this.namesOfBooksAvailable = new Book[1];
         for (int i = 0; i < namesOfBooksAvailable.length; i++) {
             namesOfBooksAvailable[i] =
                     new Book("malgudi days , Let us C, Java",
