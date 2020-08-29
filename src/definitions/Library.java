@@ -78,4 +78,14 @@ public class Library {
     public void doReturn(String name) {
         System.out.println(name + " was returned to the library ");
     }
+
+    /**
+     * This method is used to display books available in library
+     */
+    public void booksAvailable() {
+        for (Book books : namesOfBooksAvailable) {
+            System.out.println(books);
+        }
+    }
 }
+
