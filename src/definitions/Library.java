@@ -15,8 +15,8 @@ public class Library {
         this.namesOfBooksAvailable = new Book[10];
         for (int i = 0; i < namesOfBooksAvailable.length; i++) {
             namesOfBooksAvailable[i] =
-                    new Book("malgudi days",
-                            " ruskin bond", "5678");
+                    new Book("malgudi days , Let us C, Java",
+                            " ruskin bond , Prashant , Devendra", "1243 , 2342 , 3456");
         }
     }
 
