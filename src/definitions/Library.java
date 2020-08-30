@@ -15,8 +15,8 @@ public class Library {
         this.namesOfBooksAvailable = new Book[10];
         for (int i = 0; i < namesOfBooksAvailable.length; i++) {
             namesOfBooksAvailable[i] =
-                    new Book("malgudi days , Let us C, Java",
-                            " ruskin bond , Prashant , Devendra", "1243 , 2342 , 3456");
+                    new Book("malgudi days , Let us C, JavaTM",
+                            " ruskin bond , Prashant , James Gosling", "1243 , 2342 , 3456");
         }
     }
 
@@ -82,7 +82,7 @@ public class Library {
     /**
      * This method is used to display books available in library
      */
-    public void booksAvailable() {
+    public void getBooksAvailable() {
         for (Book books : namesOfBooksAvailable) {
             System.out.println(books);
         }

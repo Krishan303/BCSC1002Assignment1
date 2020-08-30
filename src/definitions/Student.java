@@ -127,7 +127,7 @@ public class Student {
     }
 
     /**
-     * This method shows us student details
+     * This method helps to store student details
      */
     public void getStudentDetails() {
         Scanner scanner = new Scanner(System.in);
@@ -139,10 +139,9 @@ public class Student {
         lastName = scanner.nextLine();
         System.out.println("Enter university Roll number");
         universityRollNumber = scanner.nextLong();
-        System.out.println("Your Name Is = " + studentFirstName + "" + middleName + ""
+        System.out.println("Your Name Is = " + studentFirstName + " " + middleName + " "
                 + lastName);
         System.out.println("Your University Roll Number is = " + universityRollNumber);
-
     }
 }
 
