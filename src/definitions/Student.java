@@ -24,10 +24,10 @@ public class Student {
         this.lastName = getLastName();
         this.universityRollNumber = getUniversityRollNumber();
         this.numberOfBookStored = getNumberOfBookStored();
-        this.namesOfBooksIssuedByStudents = new Book[10];
+        this.namesOfBooksIssuedByStudents = new Book[1];
         for (int i = 0; i < namesOfBooksIssuedByStudents.length; i++) {
             namesOfBooksIssuedByStudents[i]
-                    = new Book("maths , science , sst", "raju , kaju , saju ", "1234 ,5678 ,2345 ");
+                    = new Book("Let us C , JavaTm ", "Prashant Karnetkar , James Gosling ", "1234 ,5678 ");
         }
     }
 

@@ -6,7 +6,6 @@
  * */
 package execution;
 
-import definitions.Book;
 import definitions.Library;
 import definitions.Student;
 
@@ -18,11 +17,13 @@ public class FrontDesk {
     private static final int SHOW_ALL_MY_ISSUED_BOOK = 3;
     private static final int EXIT = 4;
 
+
     public static void main(String[] args) {
         Scanner scannerObject = new Scanner(System.in);
         int clientInput;
         Library library = new Library();
         Student student = new Student();
+        student.getStudentDetails();
         do {
             System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-");
             System.out.println("How may I help you today?");
